@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		42809AC1279DA18EF3C8CB53 /* Pods_Reader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C89A9356A61E5F6D4F9128E /* Pods_Reader.framework */; };
 		4E7CFEF211557A8DE28074FF /* Pods_ReaderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5E95769BA7997C6F0C80B70 /* Pods_ReaderTests.framework */; };
+		550DC0611FC6B447007D5333 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DC0601FC6B447007D5333 /* Ranking.swift */; };
+		550DC0641FC6BE02007D5333 /* RankingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DC0631FC6BE02007D5333 /* RankingDetail.swift */; };
+		550DC0661FC6C357007D5333 /* BingeBookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DC0651FC6C357007D5333 /* BingeBookRequest.swift */; };
 		557D06431FC5566300F4B4D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557D06421FC5566300F4B4D5 /* Home.storyboard */; };
 		557D06451FC556B700F4B4D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D06441FC556B700F4B4D5 /* HomeViewController.swift */; };
 		557D06471FC5609600F4B4D5 /* BingeBookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D06461FC5609600F4B4D5 /* BingeBookRouter.swift */; };
@@ -40,6 +43,9 @@
 /* Begin PBXFileReference section */
 		1F7DEA3009A6AE34D4E745F5 /* Pods-Reader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reader.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reader/Pods-Reader.release.xcconfig"; sourceTree = "<group>"; };
 		4C89A9356A61E5F6D4F9128E /* Pods_Reader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Reader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		550DC0601FC6B447007D5333 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
+		550DC0631FC6BE02007D5333 /* RankingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingDetail.swift; sourceTree = "<group>"; };
+		550DC0651FC6C357007D5333 /* BingeBookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeBookRequest.swift; sourceTree = "<group>"; };
 		557D06421FC5566300F4B4D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		557D06441FC556B700F4B4D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		557D06461FC5609600F4B4D5 /* BingeBookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeBookRouter.swift; sourceTree = "<group>"; };
@@ -91,9 +97,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		550DC0621FC6BC0A007D5333 /* JsonModel */ = {
+			isa = PBXGroup;
+			children = (
+				550DC0601FC6B447007D5333 /* Ranking.swift */,
+				550DC0631FC6BE02007D5333 /* RankingDetail.swift */,
+			);
+			path = JsonModel;
+			sourceTree = "<group>";
+		};
 		557D063B1FC553BC00F4B4D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				550DC0621FC6BC0A007D5333 /* JsonModel */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -134,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				557D06461FC5609600F4B4D5 /* BingeBookRouter.swift */,
+				550DC0651FC6C357007D5333 /* BingeBookRequest.swift */,
 			);
 			path = Communication;
 			sourceTree = "<group>";
@@ -531,6 +548,9 @@
 			files = (
 				557FD7111FB7F69200603A09 /* AppDelegate.swift in Sources */,
 				557D06471FC5609600F4B4D5 /* BingeBookRouter.swift in Sources */,
+				550DC0611FC6B447007D5333 /* Ranking.swift in Sources */,
+				550DC0641FC6BE02007D5333 /* RankingDetail.swift in Sources */,
+				550DC0661FC6C357007D5333 /* BingeBookRequest.swift in Sources */,
 				557D06451FC556B700F4B4D5 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

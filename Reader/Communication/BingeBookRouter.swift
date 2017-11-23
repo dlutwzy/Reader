@@ -9,10 +9,15 @@
 import Foundation
 import Alamofire
 
-enum BingeBookRouter: URLRequestConvertible {
-    //Delete
-    case search(query: String, page: Int)
-    
+protocol AlamofireRouterReuqest {
+    func request() -> DataRequest
+}
+
+func AlamofireRequest(url: URLRequestConvertible)-> DataRequest {
+    return Alamofire.request(url)
+}
+
+enum BingeBookRouter: URLRequestConvertible, AlamofireRouterReuqest {
     /// 获取所有排行榜
     case ranking()
 
@@ -71,7 +76,7 @@ enum BingeBookRouter: URLRequestConvertible {
     case helps(
         duration: ComprehensiveDuration,
         sort: ComprehensiveSort,
-        stat: Int,
+        start: Int,
         limit: Int,
         distillate: String
     )
@@ -105,8 +110,7 @@ enum BingeBookRouter: URLRequestConvertible {
     /// 获取章节列表
     case chapters(bookId: String)
 
-    /// 获取章节内容
-    case chapterContent(url: String)
+
 
     enum ComprehensiveBlock: String {
         ///综合讨论区
@@ -131,30 +135,98 @@ enum BingeBookRouter: URLRequestConvertible {
         case commentCount = "comment-count"
     }
     
-    static let baseURLString = "http://api.zhuishushenqi.com"
-    static let baseImgUrlString = "http://statics.zhuishushenqi.com"
+    static let baseURLString = "https://api.zhuishushenqi.com"
+    static let baseImgUrlString = "https://statics.zhuishushenqi.com"
 
     
     func asURLRequest() throws -> URLRequest {
         let result: (path: String, parameters: Parameters) = {
             switch self {
-            case let .search(query, page) where page > 0:
-                return ("/search", ["q": query, "offset": Router.perPage * page])
-            case let .search(query, _):
-                return ("/search", ["q": query])
-            case let .ranking():
-                return ("/ranking/gender", [])
-            case let .topDetails(rankingId):
-                return ("/ranking/\(rankingId)", [])
-            case let .bookDetails(bookId):
-                return ("/book/\(bookId)", [])
+            case .ranking:
+                return ("/ranking/gender", [:])
+            case .rankingDetail(let rankingId):
+                return ("/ranking/\(rankingId)", [:])
+            case .bookDetail(let bookId):
+                return ("/book/\(bookId)", [:])
+            case .hotReviews(let bookId):
+                return ("/post/review/best-by-book", ["book": bookId])
+            case .recommendList(let bookId, let limit):
+                return ("book-list/\(bookId)/recommend", ["limit": limit])
+            case .hotWords:
+                return ("/book/hot-word", [:])
+            case .bookNameAutoComplete(let partName):
+                return ("/book/auto-complete", ["query": partName])
+            case .searchBookByName(let bookName):
+                return ("/book/fuzzy-search", ["query": bookName])
+            case .comprehensiveList(let block, let duration, let sort, let type, let distillate, let start, let limit):
+                return ("/book/by-block", [
+                    "block": block.rawValue,
+                    "duration": duration.rawValue,
+                    "sort": sort.rawValue,
+                    "type": type,
+                    "distiallate": distillate,
+                    "start": start,
+                    "limit": limit
+                    ])
+            case .helps(let duration, let sort, let start, let limit, let distillate):
+                return ("/post/help", [
+                    "duration": duration.rawValue,
+                    "sort": sort.rawValue,
+                    "start": start,
+                    "limit": limit,
+                    "distillate": distillate
+                    ])
+            case .bookReviews(let duration, let sort, let type, let start, let limit, let distillate):
+                return ("/post/review", [
+                    "duration": duration.rawValue,
+                    "sort": sort.rawValue,
+                    "type": type,
+                    "start": start,
+                    "limit": limit,
+                    "distillate": distillate
+                    ])
+            case .categoryList:
+                return ("/cats/lv2/statistics", [:])
+            case .chapters(let bookId):
+                return ("/mix-atoc/\(bookId)", ["view": "chapters"])
             }
         }()
         
-        let url = try Router.baseURLString.asURL()
+        let url = try  BingeBookRouter.baseURLString.asURL()
         let urlRequest = URLRequest(url: url.appendingPathComponent(result.path))
         
         return try URLEncoding.default.encode(urlRequest, with: result.parameters)
+    }
+
+    func request() -> DataRequest {
+        return AlamofireRequest(url: self)
+    }
+}
+
+enum BookContentRouter:URLRequestConvertible, AlamofireRouterReuqest {
+
+    /// 获取章节内容
+    case chapterContent(url: String)
+
+    static let baseChapterURLString = "http://chapter2.zhuishushenqi.com"
+
+
+    func asURLRequest() throws -> URLRequest {
+        let result: (path: String, parameters: Parameters) = {
+            switch self {
+            case .chapterContent(let url):
+                return ("/chapter/\(url)", [:])
+            }
+        }()
+
+        let url = try  BookContentRouter.baseChapterURLString.asURL()
+        let urlRequest = URLRequest(url: url.appendingPathComponent(result.path))
+
+        return try URLEncoding.default.encode(urlRequest, with: result.parameters)
+    }
+
+    func request() -> DataRequest {
+        return AlamofireRequest(url: self)
     }
 }
 

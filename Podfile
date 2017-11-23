@@ -9,7 +9,7 @@ target 'Reader' do
     pod 'SnapKit'
     pod 'ReactiveSwift'
     pod 'RealmSwift'
-    pod 'HandyJSON'
+    pod 'HandyJSON', '4.0.0-beta.1'
 
     target 'ReaderTests' do
         inherit! :search_paths

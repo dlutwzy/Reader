@@ -8,12 +8,32 @@
 
 import UIKit
 import Alamofire
+import HandyJSON
 
 class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        Alamofire.request(BingeBookRouter.ranking()).responseString { (response) in
+//            if let json = response.result.value {
+//                print("Json is : \(json)")
+//            }
+//            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+//                print("data is : \(utf8Text)")
+//            }
+            if let ranking  = JSONDeserializer<Ranking>.deserializeFrom(json: response.result.value) {
+                print("json obj is : \(ranking)")
+            }
+            if let ranking  = Ranking.deserialize(from: response.result.value) {
+                print("json obj is : \(ranking)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
