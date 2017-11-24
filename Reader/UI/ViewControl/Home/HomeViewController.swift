@@ -19,7 +19,7 @@ class HomeViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
+        self.view.backgroundColor = UIColor(patternImage: R.image.shelf_divider()!)
         Alamofire.request(BingeBookRouter.ranking()).responseString { (response) in
 //            if let json = response.result.value {
 //                print("Json is : \(json)")

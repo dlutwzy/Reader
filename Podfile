@@ -11,6 +11,9 @@ target 'Reader' do
     pod 'RealmSwift'
     pod 'HandyJSON', '4.0.0-beta.1'
 
+    #tools
+    pod 'R.swift'
+
     target 'ReaderTests' do
         inherit! :search_paths
         # Pods for testing

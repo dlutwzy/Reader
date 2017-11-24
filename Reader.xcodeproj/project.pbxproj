@@ -12,7 +12,11 @@
 		550DC0611FC6B447007D5333 /* Ranking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DC0601FC6B447007D5333 /* Ranking.swift */; };
 		550DC0641FC6BE02007D5333 /* RankingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DC0631FC6BE02007D5333 /* RankingDetail.swift */; };
 		550DC0661FC6C357007D5333 /* BingeBookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 550DC0651FC6C357007D5333 /* BingeBookRequest.swift */; };
-		557D06431FC5566300F4B4D5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557D06421FC5566300F4B4D5 /* Home.storyboard */; };
+		551C9AAF1FC8026100FAE251 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 551C9AAE1FC8026100FAE251 /* R.generated.swift */; };
+		551C9AB81FC8096800FAE251 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 551C9AB71FC8096800FAE251 /* Roboto-Regular.ttf */; };
+		551C9AC01FC80BF800FAE251 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 551C9AC21FC80BF800FAE251 /* Localizable.strings */; };
+		551C9ACD1FC80CA100FAE251 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551C9ACF1FC80CA100FAE251 /* Home.storyboard */; };
+		551C9AD41FC80CB300FAE251 /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551C9AD61FC80CB300FAE251 /* Common.storyboard */; };
 		557D06451FC556B700F4B4D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D06441FC556B700F4B4D5 /* HomeViewController.swift */; };
 		557D06471FC5609600F4B4D5 /* BingeBookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D06461FC5609600F4B4D5 /* BingeBookRouter.swift */; };
 		557FD7111FB7F69200603A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FD7101FB7F69200603A09 /* AppDelegate.swift */; };
@@ -46,7 +50,19 @@
 		550DC0601FC6B447007D5333 /* Ranking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ranking.swift; sourceTree = "<group>"; };
 		550DC0631FC6BE02007D5333 /* RankingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankingDetail.swift; sourceTree = "<group>"; };
 		550DC0651FC6C357007D5333 /* BingeBookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeBookRequest.swift; sourceTree = "<group>"; };
-		557D06421FC5566300F4B4D5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		551C9AAE1FC8026100FAE251 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		551C9AB71FC8096800FAE251 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		551C9ABD1FC80B7600FAE251 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		551C9ABF1FC80BEE00FAE251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		551C9AC11FC80BF800FAE251 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		551C9AC31FC80BFE00FAE251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		551C9ACE1FC80CA100FAE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		551C9AD11FC80CA800FAE251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Home.strings; sourceTree = "<group>"; };
+		551C9AD31FC80CAC00FAE251 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Home.strings"; sourceTree = "<group>"; };
+		551C9AD51FC80CB300FAE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Common.storyboard; sourceTree = "<group>"; };
+		551C9AD81FC80CB500FAE251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
+		551C9ADA1FC80CB600FAE251 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Common.strings"; sourceTree = "<group>"; };
+		551C9ADB1FC80CF000FAE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		557D06441FC556B700F4B4D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		557D06461FC5609600F4B4D5 /* BingeBookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeBookRouter.swift; sourceTree = "<group>"; };
 		557FD70D1FB7F69200603A09 /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +122,32 @@
 			path = JsonModel;
 			sourceTree = "<group>";
 		};
+		551C9AB01FC8067500FAE251 /* Licence */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Licence;
+			sourceTree = "<group>";
+		};
+		551C9AB31FC8079F00FAE251 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				551C9ABA1FC809C400FAE251 /* Font */,
+				551C9AAE1FC8026100FAE251 /* R.generated.swift */,
+				557FD7171FB7F69200603A09 /* Assets.xcassets */,
+				551C9AC21FC80BF800FAE251 /* Localizable.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		551C9ABA1FC809C400FAE251 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				551C9AB71FC8096800FAE251 /* Roboto-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		557D063B1FC553BC00F4B4D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,8 +175,10 @@
 		557D063E1FC553DF00F4B4D5 /* ViewControl */ = {
 			isa = PBXGroup;
 			children = (
+				551C9AB01FC8067500FAE251 /* Licence */,
 				557D06411FC5562400F4B4D5 /* Home */,
-				557D06421FC5566300F4B4D5 /* Home.storyboard */,
+				551C9ACF1FC80CA100FAE251 /* Home.storyboard */,
+				551C9AD61FC80CB300FAE251 /* Common.storyboard */,
 			);
 			path = ViewControl;
 			sourceTree = "<group>";
@@ -188,12 +232,12 @@
 		557FD70F1FB7F69200603A09 /* Reader */ = {
 			isa = PBXGroup;
 			children = (
+				551C9AB31FC8079F00FAE251 /* Resource */,
 				557D06401FC5545C00F4B4D5 /* Communication */,
 				557D063B1FC553BC00F4B4D5 /* Model */,
 				557D063F1FC553F600F4B4D5 /* Extension */,
 				557D063C1FC553CB00F4B4D5 /* UI */,
 				557FD7101FB7F69200603A09 /* AppDelegate.swift */,
-				557FD7171FB7F69200603A09 /* Assets.xcassets */,
 				557FD7191FB7F69200603A09 /* LaunchScreen.storyboard */,
 				557FD71C1FB7F69200603A09 /* Info.plist */,
 			);
@@ -249,6 +293,7 @@
 			buildConfigurationList = 557FD7351FB7F69200603A09 /* Build configuration list for PBXNativeTarget "Reader" */;
 			buildPhases = (
 				EB89A9EFB34EB05F0308E92E /* [CP] Check Pods Manifest.lock */,
+				551C9AAB1FC7FF5B00FAE251 /* ShellScript */,
 				557FD7091FB7F69200603A09 /* Sources */,
 				557FD70A1FB7F69200603A09 /* Frameworks */,
 				557FD70B1FB7F69200603A09 /* Resources */,
@@ -339,6 +384,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 557FD7041FB7F69200603A09;
 			productRefGroup = 557FD70E1FB7F69200603A09 /* Products */;
@@ -357,9 +403,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				557D06431FC5566300F4B4D5 /* Home.storyboard in Resources */,
+				551C9AB81FC8096800FAE251 /* Roboto-Regular.ttf in Resources */,
+				551C9AD41FC80CB300FAE251 /* Common.storyboard in Resources */,
 				557FD71B1FB7F69200603A09 /* LaunchScreen.storyboard in Resources */,
+				551C9ACD1FC80CA100FAE251 /* Home.storyboard in Resources */,
 				557FD7181FB7F69200603A09 /* Assets.xcassets in Resources */,
+				551C9AC01FC80BF800FAE251 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +453,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-Reader/Pods-Reader-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
@@ -414,6 +464,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Rswift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
@@ -460,6 +511,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		551C9AAB1FC7FF5B00FAE251 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Reader/Resource\"";
 		};
 		C121059197C52E36FCAAE042 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -547,6 +611,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				557FD7111FB7F69200603A09 /* AppDelegate.swift in Sources */,
+				551C9AAF1FC8026100FAE251 /* R.generated.swift in Sources */,
 				557D06471FC5609600F4B4D5 /* BingeBookRouter.swift in Sources */,
 				550DC0611FC6B447007D5333 /* Ranking.swift in Sources */,
 				550DC0641FC6BE02007D5333 /* RankingDetail.swift in Sources */,
@@ -587,10 +652,42 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		551C9AC21FC80BF800FAE251 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551C9AC11FC80BF800FAE251 /* zh-Hans */,
+				551C9AC31FC80BFE00FAE251 /* en */,
+				551C9ADB1FC80CF000FAE251 /* Base */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		551C9ACF1FC80CA100FAE251 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551C9ACE1FC80CA100FAE251 /* Base */,
+				551C9AD11FC80CA800FAE251 /* en */,
+				551C9AD31FC80CAC00FAE251 /* zh-Hans */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		551C9AD61FC80CB300FAE251 /* Common.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				551C9AD51FC80CB300FAE251 /* Base */,
+				551C9AD81FC80CB500FAE251 /* en */,
+				551C9ADA1FC80CB600FAE251 /* zh-Hans */,
+			);
+			name = Common.storyboard;
+			sourceTree = "<group>";
+		};
 		557FD7191FB7F69200603A09 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				557FD71A1FB7F69200603A09 /* Base */,
+				551C9ABD1FC80B7600FAE251 /* zh-Hans */,
+				551C9ABF1FC80BEE00FAE251 /* en */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -602,6 +699,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -659,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

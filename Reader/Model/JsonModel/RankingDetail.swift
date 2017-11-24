@@ -9,7 +9,7 @@
 import Foundation
 import HandyJSON
 
-struct RankingDetail: HandyJson {
+struct RankingDetail: HandyJSON {
     var ok: Bool?
     var ranking: RankingContent?
 }
@@ -40,7 +40,7 @@ struct RankingBookDetail: HandyJSON {
     var cover: String?
     var latelyFollwser: Int?
     /// 留存比？
-    var retentionRatio: string?
+    var retentionRatio: String?
     var shortIntro: String?
     var site: String?
     var title: String?

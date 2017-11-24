@@ -16,7 +16,7 @@ class BingeBookRequest {
         })
     }
 
-    static func getRankingBookDetail(rankingId: String, responseBlock: @esacping (RankingBookDetail?) -> Void) {
+    static func getRankingBookDetail(rankingId: String, responseBlock: @escaping (RankingBookDetail?) -> Void) {
         BingeBookRouter.rankingDetail(rankingId: rankingId).request().responseString { (res) in
             
         }
