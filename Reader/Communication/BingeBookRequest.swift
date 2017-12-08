@@ -12,7 +12,7 @@ import Alamofire
 class BingeBookRequest {
     static func getRanking(responseBlcok: @escaping (Ranking?) -> Void) {
         BingeBookRouter.ranking().request().responseString(completionHandler: { (res) in
-            responseBlcok(Ranking.deserialize(from: res.result.value))
+            //responseBlcok(Ranking.deserialize(from: res.result.value))
         })
     }
 

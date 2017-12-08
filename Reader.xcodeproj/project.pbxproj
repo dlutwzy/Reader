@@ -17,6 +17,7 @@
 		551C9AC01FC80BF800FAE251 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 551C9AC21FC80BF800FAE251 /* Localizable.strings */; };
 		551C9ACD1FC80CA100FAE251 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551C9ACF1FC80CA100FAE251 /* Home.storyboard */; };
 		551C9AD41FC80CB300FAE251 /* Common.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 551C9AD61FC80CB300FAE251 /* Common.storyboard */; };
+		557088A91FD7CF3A001C8FB4 /* AlamofireExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557088A81FD7CF3A001C8FB4 /* AlamofireExtension.swift */; };
 		557D06451FC556B700F4B4D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D06441FC556B700F4B4D5 /* HomeViewController.swift */; };
 		557D06471FC5609600F4B4D5 /* BingeBookRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557D06461FC5609600F4B4D5 /* BingeBookRouter.swift */; };
 		557FD7111FB7F69200603A09 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FD7101FB7F69200603A09 /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		551C9AD81FC80CB500FAE251 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Common.strings; sourceTree = "<group>"; };
 		551C9ADA1FC80CB600FAE251 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Common.strings"; sourceTree = "<group>"; };
 		551C9ADB1FC80CF000FAE251 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		557088A81FD7CF3A001C8FB4 /* AlamofireExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireExtension.swift; sourceTree = "<group>"; };
 		557D06441FC556B700F4B4D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		557D06461FC5609600F4B4D5 /* BingeBookRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BingeBookRouter.swift; sourceTree = "<group>"; };
 		557FD70D1FB7F69200603A09 /* Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reader.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +188,7 @@
 		557D063F1FC553F600F4B4D5 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				557088A81FD7CF3A001C8FB4 /* AlamofireExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -610,6 +613,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				557088A91FD7CF3A001C8FB4 /* AlamofireExtension.swift in Sources */,
 				557FD7111FB7F69200603A09 /* AppDelegate.swift in Sources */,
 				551C9AAF1FC8026100FAE251 /* R.generated.swift in Sources */,
 				557D06471FC5609600F4B4D5 /* BingeBookRouter.swift in Sources */,

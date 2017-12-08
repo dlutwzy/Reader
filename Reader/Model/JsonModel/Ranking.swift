@@ -9,13 +9,13 @@
 import Foundation
 import HandyJSON
 
-struct Ranking: HandyJSON {
+struct Ranking: Codable {
     var male: [RankingBySex]?
     var female: [RankingBySex]?
     var ok: Bool?
 }
 
-struct RankingBySex: HandyJSON {
+struct RankingBySex: Codable {
     var _id: String?
     var title: String?
     var cover: String?

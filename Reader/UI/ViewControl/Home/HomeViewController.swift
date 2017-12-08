@@ -3,12 +3,19 @@
 //  Reader
 //
 //  Created by WZY on 2017/11/22.
-//  Copyright © 2017年 WZY. All rights reserved.
+//  Copyright © 2017 WZY. All rights reserved.
 //
 
 import UIKit
 import Alamofire
 import HandyJSON
+
+struct Test {
+    var hello: String?
+    func helloFunc() {
+        print("hello func")
+    }
+}
 
 class HomeViewController: UIViewController {
 
@@ -20,6 +27,25 @@ class HomeViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.view.backgroundColor = UIColor(patternImage: R.image.shelf_divider()!)
+        Alamofire.request(BingeBookRouter.ranking()).responseJModel { (response: DataResponse<Ranking>) in
+
+            if let ranking = response.result.value {
+                print("json obj is : \(ranking)")
+            }
+
+            var test: Test = Test(hello: "haha")
+
+            let helloFunc = test.helloFunc
+            helloFunc()
+            let str = test[keyPath: \Test.hello]
+            let str2 = test.hello
+            print(str)
+            print(str2)
+            test[keyPath: \Test.hello] = "???"
+            print(str)
+            print(str2)
+        }
+        /*
         Alamofire.request(BingeBookRouter.ranking()).responseString { (response) in
 //            if let json = response.result.value {
 //                print("Json is : \(json)")
@@ -34,6 +60,7 @@ class HomeViewController: UIViewController {
                 print("json obj is : \(ranking)")
             }
         }
+ */
     }
 
     override func didReceiveMemoryWarning() {
