@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import HandyJSON
 
 struct Ranking: Codable {
     var male: [RankingBySex]?

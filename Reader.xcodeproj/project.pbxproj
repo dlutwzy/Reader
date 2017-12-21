@@ -25,6 +25,8 @@
 		557FD71B1FB7F69200603A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 557FD7191FB7F69200603A09 /* LaunchScreen.storyboard */; };
 		557FD7261FB7F69200603A09 /* ReaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FD7251FB7F69200603A09 /* ReaderTests.swift */; };
 		557FD7311FB7F69200603A09 /* ReaderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557FD7301FB7F69200603A09 /* ReaderUITests.swift */; };
+		55D2202D1FEB926E0073E4C8 /* ClickableTitleBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2202C1FEB926E0073E4C8 /* ClickableTitleBarButton.swift */; };
+		55D2202F1FEB9FF50073E4C8 /* BookShelveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D2202E1FEB9FF50073E4C8 /* BookShelveViewController.swift */; };
 		61169A408ED39BBCFA4649FB /* Pods_ReaderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CF421547D386A3E81BD8D42 /* Pods_ReaderUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +80,8 @@
 		557FD72C1FB7F69200603A09 /* ReaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		557FD7301FB7F69200603A09 /* ReaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderUITests.swift; sourceTree = "<group>"; };
 		557FD7321FB7F69200603A09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55D2202C1FEB926E0073E4C8 /* ClickableTitleBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableTitleBarButton.swift; sourceTree = "<group>"; };
+		55D2202E1FEB9FF50073E4C8 /* BookShelveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookShelveViewController.swift; sourceTree = "<group>"; };
 		5CF421547D386A3E81BD8D42 /* Pods_ReaderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReaderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C5E26298D19527F59142434 /* Pods-ReaderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderUITests/Pods-ReaderUITests.release.xcconfig"; sourceTree = "<group>"; };
 		7218D40E4B7B26913E1B1D9B /* Pods-ReaderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReaderTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReaderTests/Pods-ReaderTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +174,7 @@
 		557D063D1FC553D700F4B4D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55D2202C1FEB926E0073E4C8 /* ClickableTitleBarButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -206,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				557D06441FC556B700F4B4D5 /* HomeViewController.swift */,
+				55D2202E1FEB9FF50073E4C8 /* BookShelveViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -619,8 +625,10 @@
 				557D06471FC5609600F4B4D5 /* BingeBookRouter.swift in Sources */,
 				550DC0611FC6B447007D5333 /* Ranking.swift in Sources */,
 				550DC0641FC6BE02007D5333 /* RankingDetail.swift in Sources */,
+				55D2202F1FEB9FF50073E4C8 /* BookShelveViewController.swift in Sources */,
 				550DC0661FC6C357007D5333 /* BingeBookRequest.swift in Sources */,
 				557D06451FC556B700F4B4D5 /* HomeViewController.swift in Sources */,
+				55D2202D1FEB926E0073E4C8 /* ClickableTitleBarButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
